@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡登豐 | 溫暖與專業並進的產線領航員</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .warm-gradient {
+            background: linear-gradient(135deg, #065f46 0%, #064e3b 100%);
+        }
+
+        .soft-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .soft-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+            border-color: #10b981;
+        }
+
+        .bg-warm-base {
+            background-color: #fdfbf7;
+        }
+    </style>
+</head>
+<body class="bg-warm-base text-slate-700">
+
+    <!-- 導覽列 -->
+    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-lg border-b border-emerald-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold">簡</div>
+                <div class="text-xl font-bold text-emerald-900 tracking-tight">簡登豐 <span class="text-emerald-500 font-normal text-sm ml-1">個人網頁</span></div>
+            </div>
+            <div class="hidden md:flex space-x-10 font-medium text-emerald-800/80">
+                <a href="#intro" class="hover:text-emerald-600 transition">關於登豐</a>
+                <a href="#work" class="hover:text-emerald-600 transition">職人工藝</a>
+                <a href="#education" class="hover:text-emerald-600 transition">終身學習</a>
+                <a href="#contact" class="px-5 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition shadow-md shadow-emerald-200">打個招呼</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區：加入溫暖色彩 -->
+    <header class="pt-40 pb-24 px-6 warm-gradient text-white relative overflow-hidden">
+        <!-- 裝飾背景 -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-emerald-400/10 skew-x-12 translate-x-20"></div>
+        
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+            <div class="md:w-3/5 space-y-8 text-center md:text-left">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-emerald-100 text-sm">
+                    <span class="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span>
+                    <span>深耕屏東，專注製造職人</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    用專業守護品質<br>
+                    用熱忱帶領團隊
+                </h1>
+                <p class="text-xl text-emerald-50/80 max-w-2xl leading-relaxed">
+                    您好，我是 <span class="text-orange-300 font-bold underline decoration-2 underline-offset-4">簡登豐</span>。<br>
+                    在星博電子的生產線上，我追求的不只是產出，更是每一件產品背後的職人精神與對團隊的溫馨承諾。
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4">
+                    <a href="#work" class="bg-orange-400 hover:bg-orange-500 text-white px-10 py-4 rounded-2xl font-bold transition-all shadow-lg shadow-emerald-900/20">查看工作實務</a>
+                    <a href="#intro" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-10 py-4 rounded-2xl font-bold transition-all backdrop-blur-sm">認識我的價值</a>
+                </div>
+            </div>
+            <div class="md:w-2/5 flex justify-center relative">
+                <div class="relative w-72 h-72 md:w-80 md:h-80">
+                    <!-- 裝飾圓圈 -->
+                    <div class="absolute inset-0 bg-orange-300/20 rounded-full animate-ping opacity-20"></div>
+                    <div class="absolute -inset-4 border-2 border-emerald-300/30 rounded-full border-dashed animate-spin-slow"></div>
+                    <div class="w-full h-full rounded-full bg-emerald-800 border-8 border-white/10 overflow-hidden shadow-2xl flex items-center justify-center">
+                         <svg class="w-40 h-40 text-emerald-100/30" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 關於我 / 溫暖價值觀 -->
+    <section id="intro" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16 space-y-4">
+            <h2 class="text-emerald-800 text-sm font-bold tracking-widest uppercase">My Philosophy</h2>
+            <p class="text-4xl font-bold text-slate-800 font-serif italic">「細節藏在品質裡，溫度留在人心中」</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="p-10 soft-card rounded-3xl">
+                <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-8">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-emerald-900">團隊的後盾</h3>
+                <p class="text-slate-500 leading-relaxed italic">身為班長，我不僅是生產的調度者，更是夥伴們的傾聽者。在星博電子，我們攜手攻克每一個產能目標。</p>
+            </div>
+            <div class="p-10 soft-card rounded-3xl">
+                <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-600 mb-8">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-emerald-900">品質的守護</h3>
+                <p class="text-slate-500 leading-relaxed italic">從馬達製造到成品包裝，每一道燒機測試都是對客戶的承諾。我堅持「不收不良品、不產不良品」。</p>
+            </div>
+            <div class="p-10 soft-card rounded-3xl">
+                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-8">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-emerald-900">知識的渴望</h3>
+                <p class="text-slate-500 leading-relaxed italic">在屏科大的學術殿堂中，我將工業管理的理論與十多年的產線實務交織，尋找更卓越的生產之道。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作內容 -->
+    <section id="work" class="py-24 bg-emerald-50 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-emerald-900 mb-2">專業現場實錄</h2>
+                    <p class="text-emerald-700">在星博電子股份有限公司的每一天</p>
+                </div>
+                <div class="mt-4 md:mt-0 px-6 py-2 bg-emerald-200/50 text-emerald-800 rounded-full font-bold">屏東加工出口區</div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- 項目 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-16 h-16 bg-emerald-600 rounded-2xl shrink-0 flex items-center justify-center text-white shadow-lg shadow-emerald-200">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-emerald-900">馬達製造生產管理</h4>
+                        <p class="text-slate-600 leading-relaxed">作為班長，統籌馬達生產線的所有環節。透過屏科大所學的工業管理技巧，我不斷嘗試優化生產流程，縮短換線時間，並穩定良率。</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-100 rounded-md text-sm">生產排程</span>
+                            <span class="px-3 py-1 bg-slate-100 rounded-md text-sm">良率監控</span>
+                            <span class="px-3 py-1 bg-slate-100 rounded-md text-sm">人員培訓</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 項目 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-100 flex flex-col md:flex-row gap-8 items-start">
+                    <div class="w-16 h-16 bg-orange-400 rounded-2xl shrink-0 flex items-center justify-center text-white shadow-lg shadow-orange-100">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-2xl font-bold text-emerald-900">電源供應器後段流程支援</h4>
+                        <p class="text-slate-600 leading-relaxed">跨部門協作是我的強項。我積極參與電源供應器成品的包裝與「燒機測試」(Burn-in Test)，這是一個確保產品能長時間穩定運行的關鍵環節，也是對品質最嚴苛的考驗。</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-100 rounded-md text-sm">燒機測試</span>
+                            <span class="px-3 py-1 bg-slate-100 rounded-md text-sm">成品包裝</span>
+                            <span class="px-3 py-1 bg-slate-100 rounded-md text-sm">跨部門協作</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景：突顯屏科大校園綠意 -->
+    <section id="education" class="py-24 px-6 relative">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+            <div class="md:w-1/2">
+                <div class="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 rounded-lg font-bold mb-6 text-sm tracking-widest">EDUCATION</div>
+                <h2 class="text-4xl font-bold text-emerald-900 mb-8 leading-tight">在國立屏東科技大學，<br>遇見更好的自己</h2>
+                <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+                    <p>選擇在繁忙的班長職務之餘，回到屏科大工業管理系在職專班進修，是我人生中最正確的決定之一。</p>
+                    <p>在這裡，我學習到了精實生產 (Lean Manufacturing) 與大數據分析的理論，這讓我在面對複雜的產線問題時，能更有邏輯地找到答案。</p>
+                </div>
+                <div class="mt-10 p-6 bg-orange-50 rounded-2xl border border-orange-100 flex items-start space-x-4">
+                    <div class="text-orange-500 font-serif text-5xl opacity-30 mt-[-10px]">“</div>
+                    <p class="text-orange-800 font-medium">工管系的理論就像指南針，讓我在製造業的紅海中，看見效率與品質的藍海。</p>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <div class="aspect-video bg-emerald-800 rounded-[3rem] shadow-2xl overflow-hidden flex flex-col items-center justify-center p-12 text-center text-white relative">
+                    <div class="absolute inset-0 opacity-20">
+                         <!-- 模擬屏科大綠意背景圖案 -->
+                        <div class="absolute inset-0" style="background-image: radial-gradient(#fff 2px, transparent 2px); background-size: 30px 30px;"></div>
+                    </div>
+                    <div class="relative z-10">
+                        <svg class="w-20 h-20 mx-auto mb-6 text-emerald-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM3.89 9.5l8.11 4.42 8.11-4.42-8.11-4.42-8.11 4.42zM12 15.5l-6 3.27V21l6 3 6-3v-2.23l-6-3.27z" /></svg>
+                        <h3 class="text-3xl font-bold mb-2">工業管理系</h3>
+                        <p class="text-emerald-200 text-xl">在職專班 正在進修中</p>
+                        <div class="mt-8 pt-8 border-t border-white/20">
+                            <p class="text-sm font-light uppercase tracking-[0.3em]">National Pingtung University of Science and Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯繫區：加入更多溫馨文字 -->
+    <section id="contact" class="py-24 px-6 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-6 italic">期待與您的交流</h2>
+            <p class="text-slate-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+                無論是生產技術的探討、管理心得的分享，或是單純想聊聊屏東在地製造業的未來，我都非常歡迎。
+            </p>
+            
+            <div class="bg-white/5 backdrop-blur-md p-10 rounded-[2.5rem] border border-white/10 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8 text-left mb-10">
+                    <div class="space-y-1">
+                        <p class="text-emerald-400 text-sm font-bold uppercase tracking-widest">Working At</p>
+                        <p class="text-xl">星博電子股份有限公司</p>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-emerald-400 text-sm font-bold uppercase tracking-widest">Study At</p>
+                        <p class="text-xl">屏科大 工業管理系</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <input type="email" placeholder="輸入您的電子郵件" class="w-full bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                    <textarea rows="4" placeholder="您想對登豐說的話..." class="w-full bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
+                    <button onclick="this.innerHTML='感謝您的訊息！我會盡快回覆'; this.classList.add('bg-emerald-600')" class="w-full bg-orange-400 hover:bg-orange-500 text-white font-bold py-4 rounded-2xl shadow-xl transition-all flex items-center justify-center space-x-2">
+                        <span>傳送溫馨訊息</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="py-12 bg-slate-950 text-slate-500 border-t border-white/5 text-center px-6">
+        <div class="flex items-center justify-center space-x-2 mb-6">
+            <div class="w-8 h-8 bg-emerald-900 rounded-full border border-emerald-800 flex items-center justify-center text-emerald-400 text-xs font-bold">簡</div>
+            <p class="font-bold text-slate-400">簡登豐</p>
+        </div>
+        <p class="text-sm">本網頁由 AI 為簡登豐先生量身打造 &copy; 2024</p>
+        <p class="text-xs mt-2 uppercase tracking-widest">Quality is not an act, it is a habit.</p>
+    </footer>
+
+    <style>
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin-slow 12s linear infinite;
+        }
+    </style>
+
+</body>
+</html>
