@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馬達製造生產管理實務 | 簡登豐</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #fdfbf7;
+        }
+
+        .green-gradient {
+            background: linear-gradient(135deg, #065f46 0%, #064e3b 100%);
+        }
+
+        .process-node {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px dashed #10b981;
+        }
+
+        .process-node::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background-color: #10b981;
+            border-radius: 50%;
+            border: 3px solid #fdfbf7;
+        }
+    </style>
+</head>
+<body class="text-slate-700 leading-relaxed">
+
+    <!-- 導覽 -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-emerald-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-emerald-700 font-bold hover:text-emerald-500 transition">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                返回個人主頁
+            </a>
+            <div class="text-sm font-medium text-emerald-900/40">專業領域專題</div>
+        </div>
+    </nav>
+
+    <!-- 頁首區塊 -->
+    <header class="pt-32 pb-20 px-6 green-gradient text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">馬達製造生產管理</h1>
+            <p class="text-emerald-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                結合精實管理與自動化實務，在星博電子生產現場，我們不僅製造馬達，更在打造品質的承諾。
+            </p>
+        </div>
+    </header>
+
+    <!-- 核心管理模組 -->
+    <main class="max-w-5xl mx-auto px-6 py-16 -mt-12">
+        
+        <!-- 四大支柱 -->
+        <div class="grid md:grid-cols-2 gap-8 mb-20">
+            <!-- 1. 製程控制 -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-50">
+                <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900 mb-4">精密製程管制</h3>
+                <p class="text-slate-600">
+                    馬達製造包含繞線、入子、絕緣、平衡及組裝。身為班長，我嚴格監控每一個工序的 **SOP 標準作業程序**，確保轉子與定子的配合公差達到微米級精度。
+                </p>
+            </div>
+
+            <!-- 2. 效率優化 -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-50">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900 mb-4">效率與稼動率優化</h3>
+                <p class="text-slate-600">
+                    應用屏科大所學的工業工程（IE）手法，對產線進行 **瓶頸分析**。透過優化換線流程與落實 TPM 全員生產維護，我們有效提升了設備稼動率。
+                </p>
+            </div>
+
+            <!-- 3. 品質保證 -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-50">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900 mb-4">零缺失品質管理</h3>
+                <p class="text-slate-600">
+                    落實 **首檢、巡檢與完檢** 制度。結合燒機測試（Burn-in）數據回饋，早期發現異常原因，並與研發部門共同分析故障根因，降低外部失敗成本。
+                </p>
+            </div>
+
+            <!-- 4. 團隊安全 -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-emerald-50">
+                <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-900 mb-4">5S 與 職業安全</h3>
+                <p class="text-slate-600">
+                    環境是效率的基礎。我們推行 **6S 管理**（整理、整頓、清掃、清潔、素養、安全），創造一個讓同仁感到溫暖且安全的作業場景。
+                </p>
+            </div>
+        </div>
+
+        <!-- 詳細管理流程描述 -->
+        <div class="bg-emerald-800 text-white rounded-[3rem] p-10 md:p-16 mb-20 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20"></div>
+            <h2 class="text-3xl font-bold mb-10 text-emerald-300">班長的管理日常</h2>
+            
+            <div class="space-y-12">
+                <div class="process-node">
+                    <h4 class="text-xl font-bold mb-2 text-emerald-100">晨會與產前點檢</h4>
+                    <p class="text-emerald-50/70">確認人員出席、設備狀況與當日生產目標，特別宣導前一日發現的品質重點，給予團隊溫暖的鼓勵與提醒。</p>
+                </div>
+                <div class="process-node">
+                    <h4 class="text-xl font-bold mb-2 text-emerald-100">現場巡視與異常排除</h4>
+                    <p class="text-emerald-50/70">隨時觀察產線平衡狀況，如遇料件異常或設備故障，第一時間進行決策，確保生產不中斷。</p>
+                </div>
+                <div class="process-node">
+                    <h4 class="text-xl font-bold mb-2 text-emerald-100">數據統計與持續改善</h4>
+                    <p class="text-emerald-50/70">下班前彙整良率與產出數據，應用工管所學製作圖表，分析變異原因，作為隔日改善的基準。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 專業技術區 -->
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-emerald-900 mb-4">掌握的核心技術</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-6 py-3 bg-emerald-50 text-emerald-700 rounded-2xl font-medium border border-emerald-100">高轉速馬達平衡</span>
+                <span class="px-6 py-3 bg-emerald-50 text-emerald-700 rounded-2xl font-medium border border-emerald-100">自動化充磁技術</span>
+                <span class="px-6 py-3 bg-emerald-50 text-emerald-700 rounded-2xl font-medium border border-emerald-100">電源燒機測試管理</span>
+                <span class="px-6 py-3 bg-emerald-50 text-emerald-700 rounded-2xl font-medium border border-emerald-100">精實生產 (Lean)</span>
+                <span class="px-6 py-3 bg-emerald-50 text-emerald-700 rounded-2xl font-medium border border-emerald-100">IE 工程手法</span>
+            </div>
+        </div>
+
+        <!-- 引言區 -->
+        <div class="max-w-3xl mx-auto py-12 px-6 bg-orange-50 rounded-3xl text-center border border-orange-100">
+            <p class="text-2xl font-serif italic text-orange-800">
+                「在自動化的時代，最有溫度的管理是『同理心』；而最高品質的保證是『對細節的堅持』。」
+            </p>
+            <p class="mt-6 text-orange-600 font-bold">— 簡登豐</p>
+        </div>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="py-12 bg-slate-900 text-slate-500 text-center">
+        <p class="text-sm">專業馬達製造生產管理 | 星博電子 | 屏科大工管系</p>
+        <a href="index.html" class="inline-block mt-4 text-emerald-500 hover:underline">返回首頁</a>
+    </footer>
+
+</body>
+</html>
